@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+</head>
+<body>
+
+<h1>The Starbuzz Bean Machine</h1>
+<h2>Fill out the form below and click submit to order</h2>
+<p>Ship to:</p>
+
+
+<form action="http://starbuzzcoffee.com/processorder.php" method="POST">
+
+    <div class="beanschoose">
+
+        <label for="beans">Choose your beans:</label>
+
+        <select name="beans" id="beans">
+
+            <option value="House Blend">House Blend</option>
+
+            <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+
+            <option value="Guatemala">Organic Guatemale</option>
+
+            <option value="Kenya">Kenya</option>
+
+        </select>
+    </div>
+
+    <div class="type">
+
+        <p>
+
+            Type: <br>
+
+            <label for="Whole bean">Whole bean</label>
+            <input type="radio" name="beantype" id="Whole bean" value="whole">
+
+            <label for="Ground">Ground</label>
+            <input type="radio" name="beantype" id="Ground" value="ground">
+
+        </p>
+
+    </div>
+
+    <div class="div">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"> <br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"> <br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"> <br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"> <br>
+
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip"> <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"> <br>
+    </div>
+
+    <p>
+        <input type="submit" value="Order Now">
+    </p>
+</form>
+</body>
+</html>
+
