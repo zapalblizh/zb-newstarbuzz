@@ -15,61 +15,149 @@
 
     <div class="beanschoose">
 
-        <label for="beans">Choose your beans:</label>
+        <div class="tableRow">
 
-        <select name="beans" id="beans">
+            <label for="beans">Choose your beans:</label>
 
-            <option value="House Blend">House Blend</option>
+            <select name="beans" id="beans">
 
-            <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+                <option value="House Blend">House Blend</option>
 
-            <option value="Guatemala">Organic Guatemale</option>
+                <option value="Bolivia">Shade Grown Bolivia Supremo</option>
 
-            <option value="Kenya">Kenya</option>
+                <option value="Guatemala">Organic Guatemale</option>
 
-        </select>
+                <option value="Kenya">Kenya</option>
+
+            </select>
+
+       </div>
+
     </div>
+
+
 
     <div class="type">
 
-        <p>
+        <div class="tableRow">
 
-            Type: <br>
+            <p>
 
-            <label for="Whole bean">Whole bean</label>
-            <input type="radio" name="beantype" id="Whole bean" value="whole">
+                Type: <br>
 
-            <label for="Ground">Ground</label>
-            <input type="radio" name="beantype" id="Ground" value="ground">
+                <label for="Whole bean">Whole bean</label>
+                <input type="radio" name="beantype" id="Whole bean" value="whole">
 
-        </p>
+                <label for="Ground">Ground</label>
+                <input type="radio" name="beantype" id="Ground" value="ground" checked>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="numberbags">
+
+        <div class="tableRow">
+
+            <p>
+
+                <label for="numbags">Number of bags:</label>
+                <input type="number" name="bags" id="numbags" min="1" max="10">
+
+            </p>
+
+            <div class="tableRow label">
+
+                <p>
+                    <label for="date">Must arrive by date:</label>
+                    <input type="date" name="date" id="date">
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="extras">
+
+        <div class="tableRow">
+
+            <p>
+
+                <input type="checkbox" name="extras[]" id="extraschecks" value="giftwrap"> <label for="extraschecks">Giftwrap</label>
+                <input type="checkbox" name="extras[]" id="catalog" value="catalog" checked> <label for="catalog">Include catalog with order</label>
+
+            </p>
+
+        </div>
 
     </div>
 
     <div class="div">
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"> <br>
+        <div class="tableRow">
 
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address"> <br>
+            <p class="heading">
+                Ship to:
+            </p>
+            <p></p>
 
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city"> <br>
+        </div>
 
-        <label for="state">State:</label>
-        <input type="text" id="state" name="state"> <br>
+        <div class="tableRow">
 
-        <label for="zip">Zip:</label>
-        <input type="text" id="zip" name="zip"> <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"> <br>
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone"> <br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"> <br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"> <br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"> <br>
+
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip"> <br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"> <br>
+
+        </div>
+
     </div>
 
-    <p>
-        <input type="submit" value="Order Now">
-    </p>
+    <div class="Comments section">
+
+        <div class="tableRow">
+
+            <label for="commentsarea">Customer Comments:</label>
+
+            <p>
+
+            <textarea name="comments" id="commentsarea" cols="30" rows="10"></textarea>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="tableRow">
+
+        <p></p>
+        <p>
+
+            <input type="submit" value="Order Now">
+
+        </p>
+
+    </div>
+
 </form>
 </body>
 </html>
