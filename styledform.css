@@ -29,4 +29,5 @@ div.tableRow p:first-child {
 }
 p.heading {
 	font-weight: bold;
+	float: left;
 }
